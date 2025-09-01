@@ -94,3 +94,45 @@ header button:hover {
   .book-card .remove-book:hover {
     background: #d73227;
   }
+
+  /* Dialog */
+dialog {
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+  }
+  
+  dialog form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  dialog label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+  
+  dialog menu {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  dialog button {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  dialog button[type="submit"] {
+    background: #4cafef;
+    color: white;
+  }
+  
+  dialog button[value="cancel"] {
+    background: #ccc;
+  }
