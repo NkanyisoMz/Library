@@ -36,3 +36,11 @@
 header button:hover {
   background: #3a9bdc;
 }
+
+/* Library grid */
+#library {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 15px;
+  }
+  
