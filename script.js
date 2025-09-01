@@ -61,22 +61,22 @@ function removeBook(id) {
   }
 
   // ----------- FORM & DIALOG ----------
-const dialog = document.getElementById("bookDialog");
-const newBookBtn = document.getElementById("newBookBtn");
-const bookForm = document.getElementById("bookForm");
-
-newBookBtn.addEventListener("click", () => dialog.showModal());
-
-bookForm.addEventListener("submit", (e) => {
-  e.preventDefault();
-
-  const title = document.getElementById("title").value;
-  const author = document.getElementById("author").value;
-  const pages = document.getElementById("pages").value;
-  const read = document.getElementById("read").checked;
-
-  addBookToLibrary(title, author, pages, read);
-
-  dialog.close();
-  bookForm.reset();
-});
+  const dialog = document.getElementById("bookDialog");
+  const newBookBtn = document.getElementById("newBookBtn");
+  const bookForm = document.getElementById("bookForm");
+  
+  newBookBtn.addEventListener("click", () => dialog.showModal());
+  
+  bookForm.addEventListener("submit", (e) => {
+    e.preventDefault();
+  
+    const title = document.getElementById("title").value;
+    const author = document.getElementById("author").value;
+    const pages = document.getElementById("pages").value;
+    const read = document.getElementById("read").checked;
+  
+    addBookToLibrary(title, author, pages, read);
+  
+    dialog.close();
+    bookForm.reset();
+  });
