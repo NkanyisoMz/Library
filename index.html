@@ -16,9 +16,27 @@
         <div id="library"></div>
     </main>
 
-    
-    <form>
-
+     <!-- Dialog Form -->
+  <dialog id="bookDialog">
+    <form id="bookForm" method="dialog">
+      <h2>Add a New Book</h2>
+      <label>Title:
+        <input type="text" id="title" required>
+      </label>
+      <label>Author:
+        <input type="text" id="author" required>
+      </label>
+      <label>Pages:
+        <input type="number" id="pages" min="1" required>
+      </label>
+      <label>
+        <input type="checkbox" id="read"> Already Read
+      </label>
+      <menu>
+        <button value="cancel">Cancel</button>
+        <button type="submit">Add Book</button>
+      </menu>
     </form>
+</dialog>
 </body>
 </html>
