@@ -77,10 +77,16 @@ header button:hover {
     transition: 0.2s;
   }
 
-  .book-card .toggle-read {
-    background: #4caf50;
+  .book-card .toggle-read.read {
+    background: #4caf50; /* green for read */
     color: white;
   }
+  
+  .book-card .toggle-read.not-read {
+    background: #f44336; /* red for not read */
+    color: white;
+  }
+  
   
   .book-card .toggle-read:hover {
     background: #3a9e42;
