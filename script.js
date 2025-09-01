@@ -80,3 +80,7 @@ function removeBook(id) {
     dialog.close();
     bookForm.reset();
   });
+
+  // ----------- Test books -----------
+addBookToLibrary("1984", "George Orwell", 328, true);
+addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
